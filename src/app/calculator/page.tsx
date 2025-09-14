@@ -3,9 +3,6 @@ import { useState } from 'react';
 import { Card, Badge, Dropdown } from '../components/ui';
 import { items } from '../lib/data';
 
-type Weapon = Extract<typeof items[number], { type: 'Weapon' }>;
-type Equipment = Extract<typeof items[number], { type: 'Equipment' }>;
-
 interface MatchupStats {
   damagePerSecond: number;
   survivalTime: number;
